@@ -1,13 +1,35 @@
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
     <head>
         <title>Les P'tits Flans 3.0</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <meta property="og:site_name" content="Les P'tits Flans" />
+        <meta property="og:title" content="Les P'tits Flans" />
+        <meta property="og:url" content="http://ynote.hk/lesptitsflans/" />
+        <meta property="og:image" content="http://ynote.hk/lesptitsflans/img/background.jpg" />
+        <meta property="fb:app_id" content="466137596731731" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     
     <body>
 
+         <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                appId      : '466137596731731',
+                xfbml      : true,
+                version    : 'v2.0'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="bg">
         </div>
 
@@ -21,6 +43,10 @@
                 <img src="img/florent-29.gif" alt="Animated gif of the P'tits Flans" />
                 <figcaption>Florent 29th birthday :)</figcaption>
             </figure>
+
+            <footer>
+                <fb:share-button href="http://ynote.hk/lesptitsflans/" type="button"></fb:share-button>
+            </footer>
         </section>
 
     </body>
